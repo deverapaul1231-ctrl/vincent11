@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Human Spaceflight</title>
+
+<!-- Google Font (close match to the design) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        height: 100%;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .hero {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: url(https://images.pexels.com/photos/23769/pexels-photo.jpg?_gl=1*1owf8dt*_ga*NTM0ODcyODMyLjE3NzA3Nzc1NjQ.*_ga_8JE65Q40S6*czE3NzA3Nzc1NjMkbzEkZzEkdDE3NzA3Nzc1ODYkajM3JGwwJGgw) center center / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    /* Dark overlay */
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: clamp(48px, 8vw, 120px);
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        margin-top: 20px;
+        font-size: clamp(14px, 1.2vw, 18px);
+        letter-spacing: 3px;
+        font-weight: 400;
+        text-transform: uppercase;
+        opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            letter-spacing: 2px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="content">
+        <h1>HUMAN SPACEFLIGHT</h1>
+        <div class="subtitle">MAKING LIFE MULTIPLANETARY</div>
+    </div>
+</section>
+
+</body>
+</html>
