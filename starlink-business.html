@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Starlink for Businesses</title>
+    <link rel="stylesheet" href="starlink-business.css" />
+</head>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const burger = document.getElementById("hamburger");
+
+    menu.classList.toggle("active");
+    burger.classList.toggle("active");
+}
+</script>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">STARLINK</div>
+
+    <nav class="nav-links">
+        <a href="#">Fixed Site</a>
+        <a href="#">Land Mobility</a>
+        <a href="#">Maritime</a>
+        <a href="#">Aviation</a>
+        <a href="#">Direct to Cell</a>
+    </nav>
+
+    <div class="nav-right">
+        <a href="index.html">Home</a>
+        <span>|</span>
+        <a href="STARLINK.html">Personal</a>
+        <span>|</span>
+        <a href="starlink-business.html">Business</a>
+    </div>
+</header>
+
+<!-- HAMBURGER -->
+<div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="menu-tabs">
+        <a href="STARLINK.html">PERSONAL</a>
+        <a href="starlink-business.html" class="active">BUSINESS</a>
+    </div>
+
+    <ul class="menu-links">
+        <li><a href="#">Fixed Site</a></li>
+        <li><a href="#">Land Mobility</a></li>
+        <li><a href="#">Maritime</a></li>
+        <li><a href="#">Aviation</a></li>
+        <li><a href="#">Direct to Cell</a></li>
+        <li class="divider"></li>
+        <li><a href="#">US 🌐</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Availability Map</a></li>
+        <li><a href="#">Service Plans</a></li>
+        <li><a href="#">Video Guides</a></li>
+        <li><a href="#">Technology</a></li>
+    </ul>
+</div>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>STARLINK FOR BUSINESSES</h1>
+        <p>
+            Reliable high-speed internet for businesses.<br/>
+            Starting at PHP1,950/mo with a hardware cost of PHP28,000.
+        </p>
+
+        <div class="hero-links">
+            <a href="#">Connect with our team</a>
+            <span>or</span>
+            <a href="#" class="underline">view our buyer’s guide</a>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h2>LOCAL PRIORITY</h2>
+            <p>Connectivity throughout your country</p>
+            <p class="muted">Starting at PHP1,950/mo for service</p>
+
+            <div class="buttons">
+                <button class="primary">GET STARTED</button>
+                <button class="secondary">SERVICE DETAILS</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>GLOBAL PRIORITY</h2>
+            <p>Connectivity on land and ocean around the world</p>
+            <p class="muted">Starting at PHP16,400/mo for service</p>
+
+            <div class="buttons">
+                <button class="primary">GET STARTED</button>
+                <button class="secondary">SERVICE DETAILS</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

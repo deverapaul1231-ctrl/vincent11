@@ -1,0 +1,134 @@
+/* General reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #111;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links a {
+  margin: 0 20px;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+/* Hero Section */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg?_gl=1*1plnexy*_ga*MTcyNjQ3MTYxMi4xNzcwNzI3MDQy*_ga_8JE65Q40S6*czE3NzA3MjcwNDIkbzEkZzEkdDE3NzA3MjcxMzckajI1JGwwJGgw');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fix the background image */
+  text-align: center;
+  /* No animation for the background */
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  animation: popup 1.5s ease-out forwards; /* Apply popup animation only to the text */
+}
+
+p {
+  font-size: 1.2rem;
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  animation: popup 1.5s ease-out 0.5s forwards; /* Apply popup animation with delay for the text */
+}
+
+/* Button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #f0a500;
+  color: #fff;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e68900;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+/* Animation for Popup Effect */
+@keyframes popup {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Starlink – Internet From Space</title>
+    <link rel="stylesheet" href="STARLINK.css" />
+</head>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    const burger = document.getElementById("hamburger");
+
+    menu.classList.toggle("active");
+    burger.classList.toggle("active");
+}
+</script>
+
+
+<body>
+
+<header class="navbar">
+    <div class="logo">STARLINK</div>
+
+    <nav class="nav-links">
+        <a href="#">Residential</a>
+        <a href="#">Roam</a>
+    </nav>
+
+    <div class="nav-right">
+        <a href="index.html">Home</a>
+        <span>|</span>
+        <a href="STARLINK.html">Personal</a>
+        <span>|</span>
+        <a href="starlink-business.html">Business</a>
+    </div>
+</header>
+
+<div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    
+
+    <div class="menu-tabs">
+    <a href="STARLINK.html" class="active">PERSONAL</a>
+    <a href="starlink-business.html">BUSINESS</a>
+</div>
+
+
+    <ul class="menu-links">
+        <li>RESIDENTIAL</li>
+        <li>ROAM</li>
+        <li class="divider"></li>
+        <li>US 🌐</li>
+        <li class="divider"></li>
+        <li>SIGN IN</li>
+        <li>HELP CENTER</li>
+        <li>AVAILABILITY MAP</li>
+        <li>SPECIFICATIONS</li>
+        <li>SERVICE PLANS</li>
+        <li>VIDEO GUIDES</li>
+        <li>TECHNOLOGY</li>
+    </ul>
+</div>
+
+
+<section class="hero">
+ 
+    <div class="hero-content">
+        <h1>
+            RELIABLE HIGH-SPEED<br/>
+            INTERNET FROM SPACE
+        </h1>
+        <p>
+            Connect at home or on the go<br/>
+            See speeds in your country
+        </p>
+
+        <a href="#" class="watch-btn">
+            WATCH NOW <span>▶</span>
+        </a>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h2>RESIDENTIAL</h2>
+            <p>Connect at home</p>
+            <p class="muted">Get started below to see plans and pricing</p>
+
+            <div class="buttons">
+                <button class="primary">GET STARTED</button>
+                <button class="secondary">LEARN MORE</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>ROAM</h2>
+            <p>Connect while traveling anywhere in over 150 markets</p>
+            <p class="muted">Starting at PHP3,000/mo for service</p>
+
+            <div class="buttons">
+                <button class="primary">GET STARTED</button>
+                <button class="secondary">LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
